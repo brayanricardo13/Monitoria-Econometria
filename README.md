@@ -1,0 +1,2 @@
+# Monitoria-Econometria
+ Stata,Rstudio
