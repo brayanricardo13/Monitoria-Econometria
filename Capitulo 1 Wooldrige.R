@@ -12,6 +12,24 @@ mean(k401k$mrate)#promedio contribucion
 var(k401k$mrate)
 summary(k401k)#resumen 
 
+# 2) estime la ecucion de regresion simple 
+
+regresion <- lm(k401k$prate ~ k401k$mrate, data = k401k)# roe es el regresor de salary 
+regresion
+summary(regresion)
+
+plot(k401k$prate, k401k$mrate,
+     main="Plan de pension vs Generosidad del plan ",
+     xlab='k401k$prate',
+     ylab='k401k$mrate',
+     ylim=c(0,5),
+     xlim=c(0,100))
+
+abline(regresion)
+
+cov(k401k$prate, k401k$mrate)
+
+
 
 
 
