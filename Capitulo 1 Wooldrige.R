@@ -18,10 +18,10 @@ regresion <- lm(k401k$prate ~ k401k$mrate, data = k401k)# roe es el regresor de 
 regresion
 summary(regresion)
 
-plot(k401k$prate, k401k$mrate,
+plot(k401k$mrate, k401k$prate,
      main="Plan de pension vs Generosidad del plan ",
-     xlab='k401k$prate',
-     ylab='k401k$mrate',
+     xlab='k401k$mrate',
+     ylab='k401k$prate',
      ylim=c(0,5),
      xlim=c(0,100))
 
