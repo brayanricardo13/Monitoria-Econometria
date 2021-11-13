@@ -5,7 +5,7 @@
 describe
 sum 
 table nl
-
+****
 *regresion 
 reg salary nl
 twoway (lfit  salary nl)
